@@ -1,97 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Overflow by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=0.3">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,400" rel="stylesheet">
-<style>
-	* {
-		margin: 0;
-		padding: 0;
-    font-family: 'Roboto', sans-serif;
-	}
-	html {
-		/* overflow-y: scroll; */
-		overflow-x: hidden;
-	}
-	.header-container {
-		width: 100vw;
-		height: 100vh;
-		background: url("assets/header-66457.jpg");
-		background-size: cover;
-		background-position: center;
-		display: flex;
-		-ms-align-items: center;
-		align-items: center;
-		justify-content: center;
-		box-sizing: border-box;
-	}
-	.header-center-container {
-		padding-top: 30px;
-		padding-bottom: 50px;
-    color: #ffffff;
-    text-align: center;
-	}
-	.header-top h1 {
-     font-size: 112px;
-     font-weight: 200;
-     padding-bottom: 20px;
-     border-bottom: 2px solid #ffffff;
-	}
-	.header-bottom h1 {
-     font-size: 112px;
-     font-weight: 200;
-     padding-top: 20px;
-  }
-	.header-bottom h1 span {
-		font-weight: 400;
-	}
-	.typed-cursor{
-		opacity: 1;
-		-webkit-animation: blink 0.7s infinite;
-		-moz-animation: blink 0.7s infinite;
-		animation: blink 0.7s infinite;
-	}
-	@keyframes blink{
-		0% { opacity:1; }
-		50% { opacity:0; }
-		100% { opacity:1; }
-	}
-	@-webkit-keyframes blink{
-		0% { opacity:1; }
-		50% { opacity:0; }
-		100% { opacity:1; }
-	}
-	@-moz-keyframes blink{
-		0% { opacity:1; }
-		50% { opacity:0; }
-		100% { opacity:1; }
-	}
-</style>
-</head>
-<body>
-<div class="header-container">
-    <div class="header-center-container">
-        <div class="header-top">
-            <h1>Hi, I'm @CalvT</h1>
-        </div>
-        <div class="header-bottom">
-            <h1>I <span class="thing"></span> Things</h1>
-        </div>
-    </div>
-</div>
-<script src="assets/typed.js"></script>
-<script>
-var images = ['header-2347.jpg', 'header-61187.jpg', 'header-66457.jpg', 'header-116880.jpg', 'header-156634.jpg', 'header-190799.jpg'];
-$('.header-container').css({'background-image': 'url(assets/' + images[Math.floor(Math.random() * images.length)] + ')'});
-document.addEventListener("DOMContentLoaded", function(){
-	Typed.new(".thing", {
-		strings: ["Code", "Design", "Photograph"],
-		typeSpeed: 30,
-        shuffle: true,
-        backDelay: 3000,
-        loop: true
-	});
-});
-</script>
-</body>
+	<head>
+		<title>Browsers.WTF @ CalvT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Browsers.WTF</h1>
+					<p>By @CalvT</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2">Click Me! YKYWT 😋</a>
+				</footer>
+			</section>
+
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Why Browsers.WTF?</h2>
+				</header>
+				<p>Because I wanted to make a browser test thingy.<br />
+				I did make it, then somewhere along the way I decided to do more,<br />
+				but you can still try it out if you want to.</p>
+				<footer>
+					<a href="./console.html" class="button style2">Run Browser Test</a>
+				</footer>
+			</section>
+
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right">
+				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>About me<br />and this site</h2>
+					</header>
+					<p title="Yes, I know that if you turn off JS I can't track you">I'm @CalvT, and this site is hosted by Github. It's built using plain old HTML, CSS and JS. And yeah, I'm tracking you. #CIA</p>
+				</div>
+			</article>
+
+			<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Random things<br />I have written</h2>
+					</header>
+					<p>I sometimes write random things about different stuff, often about a piece of kit I have. You can read these random ramblings <a href="#">>here</a>.</p>
+				</div>
+			</article>
+
+		<!-- Portfolio -->
+			<article class="container box style2">
+				<header>
+					<h2>Portfolio</h2>
+					<p>Just a few of my favourite photos out of the many I have shot.<br>They aren't my best, I just like these more than some of the others.</p>
+				</header>
+				<div class="inner gallery">
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/01.jpg"></a></div>
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/02.jpg"></a></div>
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/03.jpg"></a></div>
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/04.jpg"></a></div>
+					</div>
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/05.jpg"></a></div>
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/06.jpg"></a></div>
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/07.jpg"></a></div>
+						<div class="3u 12u(mobile)"><a class="image fit"><img src="images/thumbs/08.jpg"></a></div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			<article class="container box style3">
+				<header>
+					<h2>Email</h2>
+					<p>Feel like sending me a line? Fine! Just no weird stuff, thanks!</p>
+				</header>
+				<form method="post" action="#">
+					<div class="row 50%">
+						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
+						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="Email" /></div>
+						<div class="12u$">
+							<textarea name="message" placeholder="Message"></textarea>
+						</div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</article>
+
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+				<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; CalvT. All rights reserved.</li><li>Design: (currently) by <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
