@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html {
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		.header-container {
+			width: 100vw;
+			background: #32cba3;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+		}
+
+		.header-center-container {
+			padding-top: 50px;
+			padding-bottom: 70px;
+		}
+
+		.header-title {
+			text-align: center;
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 25px;
+		}
+
+		.more-container {
+			max-width: 650px;
+			margin: 30px auto 0;
+		}
+
+		.more-text {
+			text-align: center;
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.container-explaination {
+			max-width: 800px;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 14px;
+			line-height: 1.8em;
+			text-align: justify;
+			margin: auto;
+			padding: 25px 15px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+
+		.container-explaination h2 {
+			text-align: center;
+			padding: 20px 0;
+		}
+
+		.container-explaination table {
+			padding: 15px;
+			margin: auto;
+		}
+
+		.container-explaination td {
+			padding: 5px;
+		}
+
+		.container-explaination td:nth-child(1) {
+			text-align: right;
+		}
+
+		.container-explaination td:nth-child(2) {
+			text-align: left;
+		}
+
+		.container-explaination code {
+			background: #333;
+			color: #eee;
+			padding: 2.5px 5px;
+			border-radius: 4px;
+		}
+	</style>
+	<title>Raspberry PI Snippets | Browsers.WTF?</title>
+	<!-- Start of Woopra Code
+<script>
+(function(){
+        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+woopra.config({
+    	domain: 'browsers.wtf'
+});
+woopra.track();
+</script>
+<!-- End of Woopra Code -->
+</head>
+
+<body>
+	<div class="header-container">
+		<div class="header-center-container">
+			<div class="header-title">
+				<h2>Raspberry PI Snippets</h2>
+			</div>
+			<div class="more-container">
+				<div class="more-text">
+					<p>
+						<em>A collection of stuff that I find useful when working with my Raspberry PI.
+							<br>These are in no way the best or correct way to perform the mentioned action.</em>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="explaination" class="container-explaination">
+		<h2>Code Snippets</h2>
+		<table>
+			<tr>
+				<td>
+					<code>sudo xdg-open /</code>
+				</td>
+				<td>
+					<em>To open the file browser as SU</em>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>hostname -I</code>
+				</td>
+				<td>
+					<em>To get the IP address</em>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>screen</code>
+				</td>
+				<td>
+					<em>Launch a screen session</em>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>screen -x</code>
+				</td>
+				<td>
+					<em>Connect to a screen session</em>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>Ctrl+A D</code>
+				</td>
+				<td>Detach from a screen session</td>
+			</tr>
+			<tr>
+				<td><code>screen -ls</code></td>
+				<td><em>List current screen sessions</em></td>
+			</tr>
+			<tr>
+				<td><code>screen -XS [#] quit</code></td>
+				<td><em>Kill a detached screen</em></td>
+			</tr>
+		</table>
+		<h2>Useful URLs</h2>
+		<a href="http://raspberryserver.blogspot.com/2015/11/measuring-internet-connection-stability.html">Monitoring internet connection stability/latency with Smokeping</a>
+		<a href="https://romkey.com/2018/05/14/fixing-rails-5-2-bus-error-on-armv7-raspberry-pi/">Fixing Rails 5.2 Bus Error on ARMv7/Raspberry Pi</a>
+</body>
+
+</html>
